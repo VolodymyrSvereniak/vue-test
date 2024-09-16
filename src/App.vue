@@ -224,7 +224,7 @@ export default {
 
       // this.updateTickers(newTicker.name)
 
-      subscribeToTicker(this.ticker, (newPrice) => this.updateTickers(this.ticker, newPrice));
+      subscribeToTicker(newTicker.name, (newPrice) => this.updateTickers(newTicker.name, newPrice));
       this.ticker = '';
       this.filtered = '';
     },
